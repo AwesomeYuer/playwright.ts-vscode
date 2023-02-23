@@ -1,0 +1,1 @@
+[![Build Status](https://microshaoft.visualstudio.com/AzurePipelines/_apis/build/status/AwesomeYuer.playwright.ts-vscode?branchName=master)](https://microshaoft.visualstudio.com/AzurePipelines/_build/latest?definitionId=44&branchName=master)
