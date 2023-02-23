@@ -68,7 +68,10 @@ export default defineConfig({
     /* Test against branded browsers. */
     {
       name: 'Microsoft Edge',
-      use: { channel: 'msedge' ,headless: false },
+      use: {
+              channel: 'msedge',
+              headless: true
+          },
     },
     // {
     //   name: 'Google Chrome',

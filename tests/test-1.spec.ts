@@ -1,11 +1,16 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test.use({viewport:{width: 1920, height: 1080}});
+
+test('test-1', async ({ page }) => {
 
   test.slow();
   await page.goto('https://awesomeyuer.github.io/JsonStructuresDiffAssistantToolsOnline/');
   await page.getByRole('button', { name: 'Next →' }).click();
   await new Promise(r => setTimeout(r, 1000));
+
+  
+
   await page.getByText('Loading ... press Esc for cancel waiting Json Structures Diff Assistant Tools On').press('ArrowRight');
   await new Promise(r => setTimeout(r, 1000));
   await page.getByText('Loading ... press Esc for cancel waiting Json Structures Diff Assistant Tools On').press('ArrowRight');
